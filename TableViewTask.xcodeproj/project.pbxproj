@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		035A1CCD2A8D6D8900E26461 /* CountryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A1CCC2A8D6D8900E26461 /* CountryCell.swift */; };
+		035A1CCF2A8D6EAF00E26461 /* StackViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035A1CCE2A8D6EAF00E26461 /* StackViewExtension.swift */; };
 		036AB1C62A8A4FB70020D226 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AB1C52A8A4FB70020D226 /* AppDelegate.swift */; };
 		036AB1C82A8A4FB70020D226 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AB1C72A8A4FB70020D226 /* SceneDelegate.swift */; };
 		036AB1CA2A8A4FB70020D226 /* TaskOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AB1C92A8A4FB70020D226 /* TaskOneViewController.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		035A1CCC2A8D6D8900E26461 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
+		035A1CCE2A8D6EAF00E26461 /* StackViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewExtension.swift; sourceTree = "<group>"; };
 		036AB1C22A8A4FB70020D226 /* TableViewTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		036AB1C52A8A4FB70020D226 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		036AB1C72A8A4FB70020D226 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,6 +111,7 @@
 		036AB1E52A8ABD760020D226 /* Task1 */ = {
 			isa = PBXGroup;
 			children = (
+				035A1CCC2A8D6D8900E26461 /* CountryCell.swift */,
 				036AB1C92A8A4FB70020D226 /* TaskOneViewController.swift */,
 			);
 			path = Task1;
@@ -131,6 +136,7 @@
 		036AB1EA2A8AC1C20020D226 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				035A1CCE2A8D6EAF00E26461 /* StackViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -206,8 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035A1CCD2A8D6D8900E26461 /* CountryCell.swift in Sources */,
 				036AB1DE2A8A50DE0020D226 /* TaskThreeViewController.swift in Sources */,
 				036AB1DC2A8A50CC0020D226 /* TaskTwoViewController.swift in Sources */,
+				035A1CCF2A8D6EAF00E26461 /* StackViewExtension.swift in Sources */,
 				036AB1CA2A8A4FB70020D226 /* TaskOneViewController.swift in Sources */,
 				036AB1DA2A8A50430020D226 /* TabBarController.swift in Sources */,
 				036AB1E42A8A55B30020D226 /* Constants.swift in Sources */,
