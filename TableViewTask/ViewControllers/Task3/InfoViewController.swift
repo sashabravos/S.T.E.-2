@@ -10,7 +10,6 @@ import UIKit
 class InfoViewController: UIViewController {
     
     private lazy var margin = Constants.Constraints.maxMargin
-    private lazy var halfScreenMargin = Constants.Constraints.halfScreen
     
     private lazy var mainLabel: UILabel = {
         let label = UILabel()
