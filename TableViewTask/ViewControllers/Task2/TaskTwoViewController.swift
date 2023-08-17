@@ -8,16 +8,25 @@
 import UIKit
 
 class TaskTwoViewController: UIViewController {
-
+    
     private lazy var tableView = UITableView()
-    private lazy var news = NewsRecordModel.modelsArray
-    private var newRecordModel: NewsRecordModel!
+    private var viewModel = TaskTwoViewModel()
+    private var infoDictionary: Dictionary<Date, [SectionModel]> = [:]
+    private var sortedKeysArray: [Date] = []
+    
+    private lazy var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = Constants.DateType.dotDateFormat
+        return formatter
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        infoDictionary = viewModel.dictionaryByDate
+        sortedKeysArray = Array(infoDictionary.keys).sorted()
         setTableView()
     }
-
+    
     private func setTableView() {
         
         view.addSubview(tableView)
@@ -36,16 +45,30 @@ class TaskTwoViewController: UIViewController {
 
 extension TaskTwoViewController: UITableViewDataSource {
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sortedKeysArray.count
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return news.count
-
+        let sectionItem = sortedKeysArray[section]
+        if let sectionModels = infoDictionary[sectionItem] {
+            return sectionModels.count
+        }
+        return 0
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let sectionItem = sortedKeysArray[section]
+        return "Section title: \((dateFormatter.string(for: sectionItem)) ?? "SectionHeaderError")"
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: NewsCell.identifier,
-                                                 for: indexPath) as! NewsCell
-        let info = news[indexPath.row]
-        cell.configure(with: info)
+        let cell = tableView.dequeueReusableCell(withIdentifier: NewsCell.identifier, for: indexPath) as! NewsCell
+        let section = sortedKeysArray[indexPath.section]
+        if let sectionModels = infoDictionary[section] {
+            let info = sectionModels[indexPath.row]
+            cell.configure(with: info)
+        }
         return cell
     }
 }

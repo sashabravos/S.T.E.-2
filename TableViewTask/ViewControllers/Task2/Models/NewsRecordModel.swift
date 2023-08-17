@@ -8,6 +8,7 @@
 import Foundation
 
 struct NewsRecordModel {
+    
     let title: String
     let publishedAt: String
     
