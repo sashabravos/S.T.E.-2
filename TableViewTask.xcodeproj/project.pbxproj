@@ -21,6 +21,7 @@
 		036AB1E42A8A55B30020D226 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AB1E32A8A55B30020D226 /* Constants.swift */; };
 		0384B95F2A8E28E200BB987A /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B95E2A8E28E200BB987A /* NewsCell.swift */; };
 		0384B9612A8E290200BB987A /* NewsRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B9602A8E290200BB987A /* NewsRecordModel.swift */; };
+		0384B9652A8E2E3600BB987A /* NewsWithLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B9642A8E2E3600BB987A /* NewsWithLocationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		036AB1E32A8A55B30020D226 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0384B95E2A8E28E200BB987A /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		0384B9602A8E290200BB987A /* NewsRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRecordModel.swift; sourceTree = "<group>"; };
+		0384B9642A8E2E3600BB987A /* NewsWithLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWithLocationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				036AB1DD2A8A50DE0020D226 /* TaskThreeViewController.swift */,
+				0384B9642A8E2E3600BB987A /* NewsWithLocationModel.swift */,
 			);
 			path = Task3;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				036AB1DC2A8A50CC0020D226 /* TaskTwoViewController.swift in Sources */,
 				035A1CCF2A8D6EAF00E26461 /* StackViewExtension.swift in Sources */,
 				0384B95F2A8E28E200BB987A /* NewsCell.swift in Sources */,
+				0384B9652A8E2E3600BB987A /* NewsWithLocationModel.swift in Sources */,
 				036AB1CA2A8A4FB70020D226 /* TaskOneViewController.swift in Sources */,
 				036AB1DA2A8A50430020D226 /* TabBarController.swift in Sources */,
 				0384B9612A8E290200BB987A /* NewsRecordModel.swift in Sources */,
