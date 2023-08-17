@@ -22,6 +22,8 @@
 		0384B95F2A8E28E200BB987A /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B95E2A8E28E200BB987A /* NewsCell.swift */; };
 		0384B9612A8E290200BB987A /* NewsRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B9602A8E290200BB987A /* NewsRecordModel.swift */; };
 		0384B9652A8E2E3600BB987A /* NewsWithLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B9642A8E2E3600BB987A /* NewsWithLocationModel.swift */; };
+		03CAC5242A8EC77900AFE1C0 /* FactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAC5232A8EC77900AFE1C0 /* FactCell.swift */; };
+		03CAC5272A8EC98F00AFE1C0 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03CAC5262A8EC98F00AFE1C0 /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		0384B95E2A8E28E200BB987A /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		0384B9602A8E290200BB987A /* NewsRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRecordModel.swift; sourceTree = "<group>"; };
 		0384B9642A8E2E3600BB987A /* NewsWithLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsWithLocationModel.swift; sourceTree = "<group>"; };
+		03CAC5232A8EC77900AFE1C0 /* FactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactCell.swift; sourceTree = "<group>"; };
+		03CAC5262A8EC98F00AFE1C0 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,8 @@
 		036AB1E72A8ABD980020D226 /* Task3 */ = {
 			isa = PBXGroup;
 			children = (
+				03CAC5232A8EC77900AFE1C0 /* FactCell.swift */,
+				03CAC5262A8EC98F00AFE1C0 /* InfoViewController.swift */,
 				036AB1DD2A8A50DE0020D226 /* TaskThreeViewController.swift */,
 				0384B9642A8E2E3600BB987A /* NewsWithLocationModel.swift */,
 			);
@@ -221,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03CAC5242A8EC77900AFE1C0 /* FactCell.swift in Sources */,
 				035A1CCD2A8D6D8900E26461 /* CountryCell.swift in Sources */,
 				036AB1DE2A8A50DE0020D226 /* TaskThreeViewController.swift in Sources */,
 				036AB1DC2A8A50CC0020D226 /* TaskTwoViewController.swift in Sources */,
@@ -230,6 +237,7 @@
 				036AB1CA2A8A4FB70020D226 /* TaskOneViewController.swift in Sources */,
 				036AB1DA2A8A50430020D226 /* TabBarController.swift in Sources */,
 				0384B9612A8E290200BB987A /* NewsRecordModel.swift in Sources */,
+				03CAC5272A8EC98F00AFE1C0 /* InfoViewController.swift in Sources */,
 				036AB1E42A8A55B30020D226 /* Constants.swift in Sources */,
 				036AB1C62A8A4FB70020D226 /* AppDelegate.swift in Sources */,
 				036AB1C82A8A4FB70020D226 /* SceneDelegate.swift in Sources */,

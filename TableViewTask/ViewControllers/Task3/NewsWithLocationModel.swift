@@ -7,15 +7,12 @@
 
 import Foundation
 
-struct TaskThreeModel {
+struct NewsWithLocationModel {
+    let name: String
+    let description: String
+    let location: String
     
-    struct NewsWithLocationModel {
-        let name: String
-        let description: String
-        let location: String
-    }
-    
-    lazy var modelsArray: [NewsWithLocationModel] = [
+    static let modelsArray: [NewsWithLocationModel] = [
         NewsWithLocationModel(
             name: "2017 NASA Astronaut class graduation ceremony",
             description: "NASA will honor the first class of astronaut candidates to graduate under the Artemis program at 10:30 a.m. EST Friday, Jan. 10, at the agency’s Johnson Space Center in Houston. After completing more than two years of basic training, these candidates will become eligible for spaceflight, including assignments to the International Space Station, Artemis missions to the Moon, and ultimately, missions to Mars.",
@@ -53,4 +50,3 @@ struct TaskThreeModel {
         )
     ]
 }
-

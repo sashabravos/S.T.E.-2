@@ -19,11 +19,17 @@ enum Constants {
         static let countryLabel = UIFont.systemFont(ofSize: 27.0)
 
         // NewsCell
-        static let universalFont = UIFont.systemFont(ofSize: 20.0)    }
+        static let universalFont = UIFont.systemFont(ofSize: 20.0)
+        
+        // FactCell
+        static let boldTitle = UIFont.systemFont(ofSize: 30.0, weight: .black)
+        static let locationLabel = UIFont.systemFont(ofSize: 20.0, weight: .bold)
+    }
     
     enum Cells {
         static let countryCell = "CountryCell"
         static let newsCell = "NewsCell"
+        static let factCell = "FactCell"
     }
     
     enum Constraints {
@@ -34,6 +40,9 @@ enum Constants {
 
         // NewsCell
         static let smallMargin = 5.0
+        
+        // FactCell
+        static let maxMargin = 15.0
     }
     
     enum Lists {
