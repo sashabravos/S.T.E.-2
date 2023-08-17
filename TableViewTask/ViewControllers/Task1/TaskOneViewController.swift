@@ -21,6 +21,7 @@ class TaskOneViewController: UIViewController {
         
         view.addSubview(tableView)
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(CountryCell.self, forCellReuseIdentifier: CountryCell.identifier)
         
         tableView.translatesAutoresizingMaskIntoConstraints = false
@@ -46,6 +47,12 @@ extension TaskOneViewController: UITableViewDataSource {
         let info = countries[indexPath.row]
         cell.configure(name: info)
         return cell
+    }
+}
+
+extension TaskOneViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        90.0
     }
 }
 

@@ -22,6 +22,8 @@ class CountryCell: UITableViewCell {
     
     private lazy var countryImage: UIImageView = {
         let image = UIImageView()
+        image.contentMode = .scaleAspectFit
+        image.translatesAutoresizingMaskIntoConstraints = false
         return image
     }()
     
@@ -32,7 +34,7 @@ class CountryCell: UITableViewCell {
         stackView.addSomeSubviews([countryImage, countryName])
         return stackView
     }()
-
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setSubviews()
@@ -51,7 +53,7 @@ class CountryCell: UITableViewCell {
             cellStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: margin),
             cellStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -margin),
             
-            countryImage.heightAnchor.constraint(equalToConstant: Constants.Constraints.imageHeight),
+            countryImage.heightAnchor.constraint(greaterThanOrEqualToConstant: Constants.Constraints.imageHeight),
             countryImage.widthAnchor.constraint(equalToConstant: Constants.Constraints.imageWidth)
         ])
     }
