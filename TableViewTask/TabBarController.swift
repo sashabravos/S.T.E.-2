@@ -23,8 +23,8 @@ class TabBarController: UITabBarController {
     private func tabBarConfig() {
         view.backgroundColor = .systemBackground
         
-        // Set TabBar to center position
-        selectedIndex = 1
+        // Set TabBar to last position
+        selectedIndex = 2
     }
     
     private func addViewControllers() {
