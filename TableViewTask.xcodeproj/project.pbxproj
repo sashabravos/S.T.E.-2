@@ -19,6 +19,10 @@
 		036AB1DC2A8A50CC0020D226 /* TaskTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AB1DB2A8A50CC0020D226 /* TaskTwoViewController.swift */; };
 		036AB1DE2A8A50DE0020D226 /* TaskThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AB1DD2A8A50DE0020D226 /* TaskThreeViewController.swift */; };
 		036AB1E42A8A55B30020D226 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036AB1E32A8A55B30020D226 /* Constants.swift */; };
+		0384B95F2A8E28E200BB987A /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B95E2A8E28E200BB987A /* NewsCell.swift */; };
+		0384B9612A8E290200BB987A /* NewsRecordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B9602A8E290200BB987A /* NewsRecordModel.swift */; };
+		0384B9702A8E5B6D00BB987A /* SectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B96F2A8E5B6D00BB987A /* SectionModel.swift */; };
+		0384B9722A8E645300BB987A /* TaskTwoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0384B9712A8E645300BB987A /* TaskTwoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,10 @@
 		036AB1DB2A8A50CC0020D226 /* TaskTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewController.swift; sourceTree = "<group>"; };
 		036AB1DD2A8A50DE0020D226 /* TaskThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskThreeViewController.swift; sourceTree = "<group>"; };
 		036AB1E32A8A55B30020D226 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0384B95E2A8E28E200BB987A /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		0384B9602A8E290200BB987A /* NewsRecordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRecordModel.swift; sourceTree = "<group>"; };
+		0384B96F2A8E5B6D00BB987A /* SectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionModel.swift; sourceTree = "<group>"; };
+		0384B9712A8E645300BB987A /* TaskTwoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTwoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +128,9 @@
 		036AB1E62A8ABD8A0020D226 /* Task2 */ = {
 			isa = PBXGroup;
 			children = (
+				0384B95E2A8E28E200BB987A /* NewsCell.swift */,
+				0384B9662A8E38D900BB987A /* Models */,
+				0384B9712A8E645300BB987A /* TaskTwoViewModel.swift */,
 				036AB1DB2A8A50CC0020D226 /* TaskTwoViewController.swift */,
 			);
 			path = Task2;
@@ -139,6 +150,15 @@
 				035A1CCE2A8D6EAF00E26461 /* StackViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		0384B9662A8E38D900BB987A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0384B96F2A8E5B6D00BB987A /* SectionModel.swift */,
+				0384B9602A8E290200BB987A /* NewsRecordModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,12 +232,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0384B9722A8E645300BB987A /* TaskTwoViewModel.swift in Sources */,
 				035A1CCD2A8D6D8900E26461 /* CountryCell.swift in Sources */,
 				036AB1DE2A8A50DE0020D226 /* TaskThreeViewController.swift in Sources */,
 				036AB1DC2A8A50CC0020D226 /* TaskTwoViewController.swift in Sources */,
 				035A1CCF2A8D6EAF00E26461 /* StackViewExtension.swift in Sources */,
+				0384B95F2A8E28E200BB987A /* NewsCell.swift in Sources */,
 				036AB1CA2A8A4FB70020D226 /* TaskOneViewController.swift in Sources */,
 				036AB1DA2A8A50430020D226 /* TabBarController.swift in Sources */,
+				0384B9702A8E5B6D00BB987A /* SectionModel.swift in Sources */,
+				0384B9612A8E290200BB987A /* NewsRecordModel.swift in Sources */,
 				036AB1E42A8A55B30020D226 /* Constants.swift in Sources */,
 				036AB1C62A8A4FB70020D226 /* AppDelegate.swift in Sources */,
 				036AB1C82A8A4FB70020D226 /* SceneDelegate.swift in Sources */,

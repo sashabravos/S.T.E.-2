@@ -12,6 +12,12 @@ class NewsCell: UITableViewCell {
     static let identifier = Constants.Cells.newsCell
     private lazy var margin = Constants.Constraints.smallMargin
     
+    private lazy var newsDateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = Constants.DateType.dotDateAndTimeFormat
+        return formatter
+    }()
+    
     private lazy var dateLabel: UILabel = {
         let label = UILabel()
         label.textColor = .label
@@ -59,8 +65,8 @@ class NewsCell: UITableViewCell {
         ])
     }
     
-    public func configure(with model: NewsRecordModel) {
-        dateLabel.text = model.publishedAt
-        titleLabel.text = model.title
-    }
+    public func configure(with model: SectionModel) {
+            dateLabel.text = newsDateFormatter.string(from: model.date)
+            titleLabel.text = model.news
+        }
 }
